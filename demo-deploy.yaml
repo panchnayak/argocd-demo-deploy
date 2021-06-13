@@ -1,18 +1,19 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: demo-deploy
+  name: argocd-demo-e2e
   namespace: argocd
 spec:
   project: default
   source:
     repoURL: https://github.com/panchnayak/argocd-demo-deploy.git
     targetRevision: HEAD
-    path: base
+    path: e2e
     kustomize:
       version: v4.0.5
   destination:
     server: https://kubernetes.default.svc
+    namespace: argocd
   syncPolicy:
     automated:
       prune: true
