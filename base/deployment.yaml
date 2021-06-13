@@ -15,7 +15,7 @@ spec:
         app: demo
     spec:
       containers:
-      - image: panchaleswar/argocd-demo:f27903964ba8e31ad89c31379e300a35fe1632a3
+      - image: panchaleswar/argocd-demo:af66d7011499f194c582c36d6976fafb8284f87e
         name: demo
         ports:
         - containerPort: 8080
