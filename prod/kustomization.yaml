@@ -9,5 +9,4 @@ images:
 - name: panchaleswar/argocd-demo
   newTag: af66d7011499f194c582c36d6976fafb8284f87e
 resources:
-- namespace.yaml
 - ../base
