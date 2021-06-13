@@ -3,7 +3,7 @@ kind: Kustomization
 
 
 patchesStrategicMerge:
-- ./deployment-patch.yaml
+- deployment-patch.yaml
 
 images:
 - name: panchaleswar/argocd-demo
