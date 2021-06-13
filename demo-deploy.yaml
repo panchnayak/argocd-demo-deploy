@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: https://github.com/panchnayak/argocd-demo-deploy.git
     targetRevision: HEAD
-    path: e2e
+    path: base
     kustomize:
       version: v4.0.5
   destination:
